@@ -8,7 +8,7 @@ try {
   }
 }
 catch (e) { }
-const WALL0 = "https://cdn.corenexis.com/f/gK2TOnhF.png" ; // default wallpaper (the Pusheen photo)
+const WALL0 = "images/download.png" ; // default wallpaper (the Pusheen photo)
 const SPOTIFY_PLAYLIST = "1dtnogrYRyqCUm3gy4WRoa"; // your playlist ID (open.spotify.com/playlist/ID)
 /* ================== */
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
