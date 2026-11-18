@@ -447,7 +447,7 @@ const PHOTO_LIST = [
   { src: "pool.jpg", date: "2026-03-29" },
   { src: "rain.jpg", date: "2026-04-04" },
   { src: "roblox.jpg", date: "2026-04-13" },
-  { src: "blep.jpg", date: "2026-04-25" },
+  { src: "tsquare.jpg", date: "2026-04-25" },
   { src: "sakto.jpg", date: "2026-05-02" },
   { src: "tapon.jpg", date: "2026-05-11" },
   { src: "roblox.jpg", date: "2026-05-23" },
