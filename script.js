@@ -554,7 +554,7 @@ function av(n, sz) {
   return `<div class="avt" ${d} style="${st};background:${AVC[h]}">${L}</div>`;
 }
 // recents
-let recs = store.get("recs", null) || [{ n: "Winter ❄️", k: "mobile", o: 1, t: dAgo(0, 18, 20) }, { n: "Coach Flores", k: "mobile", o: 0, t: dAgo(1, 17, 5) }, { n: "Coach Amo", k: "mobile", o: 1, t: dAgo(3, 15, 40) }, { n: "Ningning", k: "FaceTime Audio", o: 0, t: dAgo(5, 22, 10) }, { n: "Kween Yasmin Signing Event", k: "FaceTime Audio (Group)", o: 0, t: dAgo(8, 19, 30) }], rf = "a";
+let recs = store.get("recs", null) || [{ n: "Kino", k: "mobile", o: 1, t: dAgo(0, 18, 20) }, { n: "Rhys", k: "mobile", o: 0, t: dAgo(1, 17, 5) }, { n: "ATE NAYEON", k: "mobile", o: 1, t: dAgo(3, 15, 40) }, { n: "Timo", k: "FaceTime Audio", o: 0, t: dAgo(5, 22, 10) }, { n: "Baby ❤️", k: "FaceTime Audio (Group)", o: 0, t: dAgo(8, 19, 30) }], rf = "a";
 function rrec() {
   const q = $("#rq").value.toLowerCase(), L = rf === "m" ? [] : recs.filter(r => r.n.toLowerCase().includes(q));
   $("#rlist").innerHTML = L.length ? L.map(r => `<div class="pr" data-n="${esc(r.n)}">${av(r.n, 52)}<div><b>${esc(r.n)}</b><small>${r.o ? "↗" : "↙"} ${esc(r.k)}</small></div><span class="dt">${fdate(r.t)}</span><span class="inf">ⓘ</span></div>`).join("") : '<div class="empty">' + (rf === "m" ? "No Missed Calls" : "No Recents") + "</div>";
@@ -563,10 +563,10 @@ $("#rq").oninput = rrec;
 $("#rseg").onclick = e => { const f = e.target.dataset.f; if (!f)
   return; rf = f; $$("#rseg span").forEach(x => x.classList.toggle("on", x.dataset.f === f)); rrec(); };
 // contacts
-let cts = store.get("cts", null) || ["Aeri", "Ate Liza", "Chaeryeong", "Coach Amo", "Coach Flores", "Daddy", "Dr. Angela", "Dr. Lopez", "Hannah", "Hyewon", "Isa", "Jeno", "Lia", "Mark", "Marco", "Minju", "Mommy", "Ningning", "Ryujin", "Winter ❄️", "Wonbin", "Yeji", "Yuna", "Kween Yasmin Signing Event"];
+let cts = store.get("cts", null) || ["ATE NAYEON", "Dadeh", "Kino", "Kuya Wonu", "Mameh ❤️", "Rhys", "Sol", "Timo", "Uno", "Yael", "Baby ❤️"];
 function rcts() {
   const q = $("#cq").value.toLowerCase(), key = x => x.replace(/[^A-Za-z ]/g, "").trim(), L = cts.filter(n => n.toLowerCase().includes(q)).sort((a, b) => key(a).localeCompare(key(b), "en", { sensitivity: "base" }));
-  let h = q ? "" : `<div class="pr" data-n="Karina Tuazon" style="padding:12px 0">${av("Karina Tuazon", 60)}<div style="border:0"><b style="font-size:20px">Karina Tuazon</b><small>My Card</small></div></div>`, last = "", ls = [];
+  let h = q ? "" : `<div class="pr" data-n="Kieth Amiel" style="padding:12px 0">${av("Kieth Amiel", 60)}<div style="border:0"><b style="font-size:20px">Kieth Amiel</b><small>My Card</small></div></div>`, last = "", ls = [];
   L.forEach(n => { const l = /[A-Za-z]/.test(n[0]) ? n[0].toUpperCase() : "#"; if (l !== last) {
     h += `<div class="sl" data-l="${l}">${l}</div>`;
     last = l;
@@ -618,7 +618,7 @@ $("#kcall").onclick = () => { if (kn) {
   kshow();
 } };
 // voicemail
-let vms = [{ n: "Ate Liza", t: dAgo(0, 16, 48), d: 12, x: "“Anong oras ka uuwi? Text mo ako, ha.”", u: 1 }, { n: "Dr. Lopez", t: dAgo(1, 10, 15), d: 21, x: "“Hello, Karina. This is Dr. Lopez reminding you about your dentist appointment. Please call back to confirm the time. Thank you.”", u: 1 }], vo = null, vp = 0, vt = null;
+let vms = [{ n: "Mameh ❤️", t: dAgo(0, 16, 48), d: 12, x: "“Anak, ano password ng Gmail ko?”", u: 1 }, { n: "ATE NAYEON", t: dAgo(1, 10, 15), d: 21, x: "“BWISET KA AMIEL!”", u: 1 }], vo = null, vp = 0, vt = null;
 function rvm() {
   $("#vlist").innerHTML = `<div style="background:#f2f2f7;border-radius:30px;padding:14px 16px;display:flex;justify-content:space-between;align-items:center;margin:4px 0 8px;font-weight:600;font-size:15px">Service Provider Voicemail<button class="pill" style="background:#dbe9ff;color:#0a84ff;font-size:14px;padding:8px 12px">Call Service Provider</button></div>` + vms.map((v, i) => `<div class="vr" data-i="${i}">${v.u ? '<i class="ud"></i>' : ""}<div class="tt"><b>${esc(v.n)}</b><span>${fdate(v.t)}<br>00:${p2(v.d)}</span></div><p>${esc(v.x)}</p>${vo === i ? `<div class="vb"><button class="vplay">${vt ? "❚❚" : "▶"}</button><div class="vtr"><i style="width:${vp / v.d * 100}%"></i></div><span>0:${p2(Math.floor(vp))}</span></div>` : ""}</div>`).join("");
   const u = vms.filter(v => v.u).length;
@@ -1170,7 +1170,7 @@ openApp.msg = () => { $("#mthr").classList.remove("on"); curT = null; rth(); };
     $("#ig-me-name").textContent = IG_ME;
     $("#ig-pf").innerHTML = `<div class="ig-pf-top"><div class="ig-pf-av"><span class="ig-ring none">${igAv(IG_ME, 86)}</span><b class="plb">+</b></div>
     <div class="ig-pf-r"><h2>${esc(ACC[IG_ME].n)}</h2><div class="ig-stat"><div><b>6</b>posts</div><div><b>1,943</b>followers</div><div><b>476</b>following</div></div></div></div>
-    <div class="ig-bio">11 | arki | 🏀</div>
+    <div class="ig-bio">bs archi 🐅</div>
     <div class="ig-btns"><button type="button">Edit profile</button><button type="button">Share profile</button><button type="button" class="sq">${ic("useradd")}</button></div>
     <div class="ig-tabs"><div class="on">${ic("grid")}</div><div>${ic("tag")}</div></div>
     <div class="ig-gr">${PROFILE_GRID.map(([k, h], i) => `<div style="${bgImg(k, h, IG_IMAGES.grid[i])}"></div>`).join("")}</div>`;
