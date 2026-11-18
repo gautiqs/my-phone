@@ -182,7 +182,7 @@ else {
 } };
 function closeApp() { $$(".ap.on").forEach(a => a.classList.remove("on")); $("#big").style.display = "none"; $("#bigbar").style.display = "none"; $("#phone").classList.remove("light"); }
 $$("[data-open]").forEach(a => a.onclick = () => { $("#ap-" + a.dataset.open).classList.add("on"); $("#phone").classList.add("light"); (window.openApp || {})[a.dataset.open] && window.openApp[a.dataset.open](); if (a.dataset.open === "spot" && !$("#sf").src)
-  $("#sf").src = "https://open.spotify.com/embed/playlist/" + SPOTIFY_PLAYLIST + "?utm_source=generator"; });
+  $("#sf").src = "https://open.spotify.com/embed/playlist/4zmA0Fvfe1FI6zYVzu1paW?utm_source=generator&si=cb8a781e2ea54929"; });
 $$("[data-close]").forEach(b => b.onclick = closeApp);
 // Locket: static display only
 const locket = $("#locket");
