@@ -211,7 +211,7 @@ const SEED = [
     { t: dAgo(4, 16, 30), x: "Hindi nagreply lol kinikilig siguro to\n\n\n" },
   { t: dAgo(9, 18, 45), x: "BTECH final na legit\n\n\n- Firewall\n- First floor wire circle\nWalls\nFraming\Fix column" },
   { t: dAgo(16, 10, 15), x: "It's okay, I understand.\nThank you for being honest with me.\nI'll always wish you the best." },
-  { t: dAgo(23, 12, 0), x: "Matcha latte seasalt\n\n\nHazel cappucino\nSalted caramel latte\nOreo bliss donut\nAlmond croissant" }
+  { t: dAgo(23, 12, 0), x: "Pancit canton\n\n\nRebisco butter\nKnorr seasoning\nColgate\nEggs\nCoke zero\nSabon" }
 ];
 let notes = store.get("notes3", null) || SEED.map((n, i) => ({ id: i + 1, ...n }));
 let nid = null;
