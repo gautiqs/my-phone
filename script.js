@@ -422,7 +422,7 @@ rclock();
 openApp.clock = rclock;
 // ---------- PHOTOS ----------*/
 const PHOTO_LIST = [
-  { src: "photos_phone/download (22).jpg", date: "2025-03-12" },
+  { src: "download (22).jpg", date: "2026-05-12" },
   { src: "photos_phone/Subaru.jpg", date: "2025-04-27" },
   { src: "photos_phone/winter aespa.jpg", date: "2025-05-09" },
   { src: "photos_phone/download (2).jpg", date: "2025-06-18" },
