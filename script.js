@@ -205,7 +205,7 @@ function dAgo(days, hours, minutes) {
   return date.getTime();
 }
 const SEED = [
-  { t: dAgo(0, 20, 12), x: "winter’s friday sched\n\n\n- 7:30 – 11:00   morning classes\n      Studio Design II · Building Tech\n- 11:00 – 1:00   vacant\n- 1:00 – 2:15     online lecture \n- 2:30 – 3:20     org meeting\n\n      dismissal @ 3:20 pm" },
+  { t: dAgo(0, 20, 12), x: "class sched\n\n\n- 7:30 – 11:00   morning classes\n      Studio Design II · Building Tech\n- 11:00 – 1:00   vacant\n- 1:00 – 2:15     online lecture \n- 2:30 – 3:20     org meeting\n\n      dismissal @ 3:20 pm" },
   { t: dAgo(0, 9, 40), x: "win’s go to coffee/pastry order\n\nIced Caramel Latte, double shot espresso, oatmilk, light ice\nCinnamon brioche (if she needs more sugar)\nCheese scone (usual breakfast)" },
   { t: dAgo(2, 21, 5), x: "To do ☑\n\n☑ plate 2 – floor plans\n☐ plate 3 – section drawings\n☐ print sheets at A1\n☐ return T-square to Isa\n☐ email prof abt deadline extension\n☐ finish basswood model base" },
   { t: dAgo(4, 16, 30), x: "Room measurements\n\n\nroom A 3.60 m × 4.20 m\nceiling height 2.70 m\ndoor 0.90 × 2.10 m\nwindow sill 0.85 m\nwindow 1.50 × 1.20 m\nstair riser 175 mm\nstair tread 250 mm\ncorridor min. 1.20 m\nscale 1:50 → 7.2 cm × 8.4 cm" },
