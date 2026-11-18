@@ -208,10 +208,10 @@ const SEED = [
   { t: dAgo(0, 20, 12), x: "Autocad\n\n\nnew\nbrowse template - acad exe\ncommand un- choose mm\ncommand la (layer)\n\nshortcut\nf7 grid\nf8 ortho movement of elements" },
   { t: dAgo(0, 9, 40), x: "Panagnip\n\nPsnaginiip ks hinahanol dsaw ako ng kalbo tapos tuymakbo ako palayo\nnsa parang building kami tapso\npag baba ko sa basment may isa pang kalbo hinahabol din ako" },
   { t: dAgo(2, 21, 5), x: "MGA BIBILHIN KO UMAY \n\n☑ Drawing pencils (HB, 2B, 6B)\n☐ vellum board\n☐ bainbrigde illus\n☐ invisible tape\n☑ ilocos empanada" },
-  { t: dAgo(4, 16, 30), x: "Room measurements\n\n\nroom A 3.60 m × 4.20 m\nceiling height 2.70 m\ndoor 0.90 × 2.10 m\nwindow sill 0.85 m\nwindow 1.50 × 1.20 m\nstair riser 175 mm\nstair tread 250 mm\ncorridor min. 1.20 m\nscale 1:50 → 7.2 cm × 8.4 cm" },
-  { t: dAgo(9, 18, 45), x: "Studio notes\n\n\nsimplify the massing\nmore daylight on north side\ncheck circulation at ground floor\nsection needs figures + entourage" },
-  { t: dAgo(16, 10, 15), x: "Model materials\n\n\nbasswood 3 mm\nchipboard 2 mm\nclear acetate\nwhite PVA glue\nsandpaper 400 grit" },
-  { t: dAgo(23, 12, 0), x: "Things to buy – school supplies\n\n\n• pencils 2H, HB, 2B, 6B\n• tracing paper roll\n• foam board (3 pcs)\n• cutter blades\n• masking tape\n• scale ruler\n• mechanical pencil 0.5\n• black fineliners 0.1 / 0.3 / 0.5\n• glue sticks\n• illustration board" }
+    { t: dAgo(4, 16, 30), x: "Hindi nagreply lol kinikilig siguro to\n\n\n" },
+  { t: dAgo(9, 18, 45), x: "BTECH final na legit\n\n\n- Firewall\n- First floor wire circle\nWalls\nFraming\Fix column" },
+  { t: dAgo(16, 10, 15), x: "It's okay, I understand. Thank you for being honest with me.\nI'll always wish you the best.\n },
+  { t: dAgo(23, 12, 0), x: "Matcha latte seasalt\n\n\nHazel cappucino\nSalted caramel latte\nOreo bliss donut\nAlmond croissant" }
 ];
 let notes = store.get("notes3", null) || SEED.map((n, i) => ({ id: i + 1, ...n }));
 let nid = null;
