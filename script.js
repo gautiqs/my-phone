@@ -462,13 +462,13 @@ const PHOTO_LIST = [
   { src: "wuw.jpg", date: "2026-08-12" },
   { src: "yown.jpg", date: "2026-08-21" },
   { src: "yun oh.jpg", date: "2026-09-02" },
-  { src: "photos_phone/download (3).jpg", date: "2026-09-11" },
-  { src: "photos_phone/download (7).jpg", date: "2026-09-19" },
-  { src: "photos_phone/𓆩༢࿔ྀુ❀✯⁖℘.jpg", date: "2026-10-04" },
-  { src: "photos_phone/Rainy Day.jpg", date: "2026-10-18" },
-  { src: "photos_phone/Opposites.jpg", date: "2026-10-22" },
-  { src: "photos_phone/download (19).jpg", date: "2026-10-26" },
-  { src: "photos_phone/⋆˚☆˖°.jpg", date: "2026-10-29" },
+  { src: "inet.jpg", date: "2026-09-11" },
+  { src: "weyt.jpg", date: "2026-09-19" },
+  { src: "ay.jpg", date: "2026-10-04" },
+  { src: "basketball.jpg", date: "2026-10-18" },
+  { src: "pose.jpg", date: "2026-10-22" },
+  { src: "wink.jpg", date: "2026-10-26" },
+  { src: "kono.jpg", date: "2026-10-29" },
 ];
 let photos = PHOTO_LIST.map((p, i) => ({ id: i + 1, s: p.src, t: p.date ? +new Date(p.date + "T12:00") : Date.now() - (PHOTO_LIST.length - i) * 864e5 })), pv = "a";
 function shrink(f, cb) { const r = new FileReader(); r.onload = () => { const i = new Image(); i.onload = () => { const k = Math.min(1, 700 / Math.max(i.width, i.height)), c = document.createElement("canvas"); c.width = i.width * k; c.height = i.height * k; c.getContext("2d").drawImage(i, 0, 0, c.width, c.height); cb(c.toDataURL("image/jpeg", .72)); }; i.src = r.result; }; r.readAsDataURL(f); }
