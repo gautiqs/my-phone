@@ -3489,4 +3489,8 @@ body {
   touch-action:manipulation;
   -webkit-text-size-adjust:100%
 }
+.i-docs {
+  background: center / cover no-repeat
+    url("https://ssl.gstatic.com/docs/doclist/images/drive_2022q3_32dp.png");
+}
 
