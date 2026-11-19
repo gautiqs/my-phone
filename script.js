@@ -9,7 +9,7 @@ try {
 }
 catch (e) { }
 const WALL0 = "download.png" ; // default wallpaper (the Pusheen photo)
-const SPOTIFY_PLAYLIST = "NZMXANVLRxGs7J1sBVbq2w; // your playlist ID (open.spotify.com/playlist/ID)
+const SPOTIFY_PLAYLIST = "NZMXANVLRxGs7J1sBVbq2w"; // your playlist ID (open.spotify.com/playlist/ID)
 /* ================== */
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const store = { get(k, d) { try {
@@ -182,7 +182,7 @@ else {
 } };
 function closeApp() { $$(".ap.on").forEach(a => a.classList.remove("on")); $("#big").style.display = "none"; $("#bigbar").style.display = "none"; $("#phone").classList.remove("light"); }
 $$("[data-open]").forEach(a => a.onclick = () => { $("#ap-" + a.dataset.open).classList.add("on"); $("#phone").classList.add("light"); (window.openApp || {})[a.dataset.open] && window.openApp[a.dataset.open](); if (a.dataset.open === "spot" && !$("#sf").src)
-  $("#sf").src = "https://open.spotify.com/embed/playlist/" + SPOTIFY PLAYLIST + "?utm_source=generator"; });
+  $("#sf").src = "https://open.spotify.com/embed/playlist/" + SPOTIFY_PLAYLIST + "?utm_source=generator"; });
 $$("[data-close]").forEach(b => b.onclick = closeApp);
 // Locket: static display only
 const locket = $("#locket");
