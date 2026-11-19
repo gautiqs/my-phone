@@ -9,7 +9,7 @@ try {
 }
 catch (e) { }
 const WALL0 = "download.png" ; // default wallpaper (the Pusheen photo)
-const SPOTIFY_PLAYLIST = "NZMXANVLRxGs7J1sBVbq2w"; // your playlist ID (open.spotify.com/playlist/ID)
+const SPOTIFY_PLAYLIST = "1dtnogrYRyqCUm3gy4WRoa"; // your playlist ID (open.spotify.com/playlist/ID)
 /* ================== */
 const $ = s => document.querySelector(s), $$ = s => [...document.querySelectorAll(s)];
 const store = { get(k, d) { try {
