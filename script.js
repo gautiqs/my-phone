@@ -1307,6 +1307,15 @@ openApp.msg = () => { $("#mthr").classList.remove("on"); curT = null; rth(); };
       moved = false;
     } }, true);
   }
+  const docsApp = document.querySelector('[data-open="docs"]');
+  if (docsApp) {
+  docsApp.onclick = () => {
+    window.open(
+      "https://docs.google.com/document/d/1DK4WM6iU3gSpVSee2s6hgDYh7-9p2NwAw_Wmy-6kfY4/edit?usp=sharing",
+      "_blank"
+    );
+  };
+}
   dragScroll(ap);
   ap.addEventListener("scroll", () => { ap.scrollLeft = 0; ap.scrollTop = 0; });
   /* ---------- open / reset ---------- */
